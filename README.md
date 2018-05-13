@@ -1,2 +1,3 @@
-# Forerunner-56---Everia
-Repo for my Minecraft modpack
+# Forerunner 56 - Everia
+Minecraft modpack currently in Alpha testing.
+Please log any issues or bugs here.
