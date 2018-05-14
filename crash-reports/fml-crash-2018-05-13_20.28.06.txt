@@ -1,0 +1,40 @@
+---- Minecraft Crash Report ----
+// On the bright side, I bought you a teddy bear!
+
+Time: 13/05/18 8:28 PM
+Description: FML has discovered extracted jar files in the mods directory.
+This breaks mod loading functionality completely.
+Remove the directories and replace with the jar files originally provided.
+
+java.lang.RuntimeException: Extracted mod jars found, loading will NOT continue
+	at net.minecraftforge.fml.relauncher.CoreModManager.findDerpMods(CoreModManager.java:279)
+	at net.minecraftforge.fml.relauncher.CoreModManager.discoverCoreMods(CoreModManager.java:319)
+	at net.minecraftforge.fml.relauncher.CoreModManager.handleLaunch(CoreModManager.java:252)
+	at net.minecraftforge.fml.relauncher.FMLLaunchHandler.setupHome(FMLLaunchHandler.java:105)
+	at net.minecraftforge.fml.relauncher.FMLLaunchHandler.setupClient(FMLLaunchHandler.java:79)
+	at net.minecraftforge.fml.relauncher.FMLLaunchHandler.configureForClientLaunch(FMLLaunchHandler.java:42)
+	at net.minecraftforge.fml.common.launcher.FMLTweaker.injectIntoClassLoader(FMLTweaker.java:139)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:115)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143)
+	at org.multimc.EntryPoint.main(EntryPoint.java:34)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_161, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1904554272 bytes (1816 MB) / 2058354688 bytes (1963 MB) up to 3814195200 bytes (3637 MB)
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms2048m -Xmx4092m
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
